@@ -1,0 +1,68 @@
+.fondo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("imagen.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.fondo--registro {
+    background-image: url("imagen.jpg");
+}
+
+.capa-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.contenedor {
+    height: 100vh;
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+}
+
+.campo__field {
+    border: none;
+    border-bottom: .2rem solid var(--blanco);
+    padding: 1rem;
+    color: var(--blanco);
+    background-color: transparent;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+.boton {
+    display: block;
+    font-family: var(--fuenteHeadings);
+    color: var(--negro);
+    background: var(--blanco);
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--blanco);
+    color: var(--negro);
+    cursor: pointer;
+}
